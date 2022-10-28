@@ -1,3 +1,9 @@
+/*
+  File name: COMP229-F2022-MIDTERM-301128334
+  Author's name: Dahye Lee 
+  Student ID: 301128334
+  Web App name: comp229-f2022-301128334.herokuapp.com
+*/
 let app = require('./server/config/app');
 let debug = require('debug')('comp308-w2019-midterm:server');
 let http = require('http');
