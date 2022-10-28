@@ -1,3 +1,10 @@
+/*
+  File name: COMP229-F2022-MIDTERM-301128334
+  Author's name: Dahye Lee 
+  Student ID: 301128334
+  Web App name: comp229-f2022-301128334.herokuapp.com
+*/
+
 /* custom JS goes here */
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
@@ -108,7 +115,7 @@ $.fn.pageMe = function(opts){
     function Start(){
         console.log("App Started ... ");
 
-        let deleteButtons = document.querySelectorAll('.btn-warning');
+        let deleteButtons = document.querySelectorAll('.btn-danger');
 
         for (button of deleteButtons){
             button.addEventListener('click', (event)=>{

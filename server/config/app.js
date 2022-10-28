@@ -1,3 +1,11 @@
+/*
+  File name: COMP229-F2022-MIDTERM-301128334
+  Author's name: Dahye Lee 
+  Student ID: 301128334
+  Web App name: comp229-f2022-301128334.herokuapp.com
+*/
+
+
 // moddules for node and express
 let createError = require("http-errors");
 let express = require("express");

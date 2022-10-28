@@ -1,8 +1,14 @@
+/*
+  File name: COMP229-F2022-MIDTERM-301128334
+  Author's name: Dahye Lee 
+  Student ID: 301128334
+  Web App name: comp229-f2022-301128334.herokuapp.com
+*/
+
 // modules required for routing
 let express = require("express");
 let router = express.Router();
 let mongoose = require("mongoose");
-// const employees = require("../models/employees");
 
 // define the employee model
 let employee = require("../models/employees");
@@ -95,10 +101,11 @@ router.post("/edit/:id", (req, res, next) => {
 });
 
 // GET - process the delete by specific employeename
-router.get("/delete/:id", (req, res, next) => {
-  let id = req.params.id;
-  
-  employee.remove({_id: id}, (err) =>{
+router.get("/delete", (req, res, next) => {
+  // let name = req.params.Employeename;
+  // console("name" + name);
+  // employee.deleteOne({Employeename: name}, (err) =>{
+  employee.deleteOne({Employeename: "Dahye"}, (err) =>{
     if(err){
       console.log(err);
       res.end(err);
